@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Unidad 2 - Productividad Docente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--
+    Narrative Plan:
+    1.  Header: Title and brief introduction to Unit 2.
+    2.  Email Management: Section for student and institutional email.
+    3.  Collaborative Work: Section for collaborative file creation.
+    4.  Office Suite Core: Sections for Spreadsheets, Presentations, and Word Processors.
+    5.  Digital Workspace: Sections for Cloud Storage and Online Publishing.
+    6.  Gemini API Feature: Content Generator for Unit 2 topics.
+    7.  Conclusion: Final statement on productivity.
+
+    Visualization Choices (Adhering to NO SVG, NO MERMAID JS, NO Chart.js/Plotly.js as there's no data for charts):
+    -   All sections use structured HTML/CSS with Tailwind for layout.
+    -   Icons are represented by Unicode characters/emojis for visual appeal.
+    -   Content is presented in "card" like structures for clarity.
+
+    Color Palette: ISFODOSU Institutional Colors (#004F9F - Blue, #E30613 - Red)
+    Confirmation: NEITHER Mermaid JS NOR SVG were used in this output. No charts are used as the content is conceptual, not data-driven.
+    -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-card {
+            background-color: white;
+            border-radius: 0.5rem; /* rounded-lg */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-lg */
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .icon-box {
+            font-size: 3rem; /* text-5xl */
+            margin-bottom: 0.5rem; /* mb-2 */
+            color: #004F9F; /* ISFODOSU Blue */
+        }
+        .heading-color {
+            color: #004F9F; /* ISFODOSU Blue */
+        }
+        .accent-color {
+            color: #E30613; /* ISFODOSU Red */
+        }
+        .bg-accent-light {
+            background-color: #FDE7E8; /* Light Red */
+        }
+        .bg-primary-light {
+            background-color: #E6F0F8; /* Light Blue */
+        }
+        /* Styles for dynamically generated lists and paragraphs */
+        #contentResponseDisplay ul, #contentResponseDisplay ol {
+            margin-left: 1.5rem;
+            list-style-position: outside;
+            margin-bottom: 0.5rem;
+        }
+        #contentResponseDisplay ul {
+            list-style-type: disc;
+        }
+        #contentResponseDisplay ol {
+            list-style-type: decimal;
+        }
+        #contentResponseDisplay li {
+            margin-bottom: 0.25rem;
+        }
+        #contentResponseDisplay p {
+            margin-bottom: 0.75rem; /* Space after each paragraph */
+            text-align: justify; /* Justify text */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <main class="container mx-auto p-4 sm:p-6 lg:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold heading-color mb-4">Unidad 2: Productividad Docente y Herramientas Ofimáticas</h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Optimiza tu labor docente: Descubre y domina las herramientas digitales esenciales para una gestión eficiente y colaborativa.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Sección 2.1 y 2.2: Gestión de Correo Electrónico -->
+            <div class="lg:col-span-3 section-card">
+                <h2 class="text-2xl font-bold heading-color mb-4">📧 Gestión Eficiente del Correo Electrónico</h2>
+                <p class="text-gray-700 mb-6">El correo electrónico es tu centro de comunicación. Aprende a manejarlo de forma profesional para una interacción fluida y organizada con estudiantes y colegas.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
+                    <div class="bg-primary-light p-4 rounded-lg flex flex-col items-center">
+                        <span class="icon-box">🎓</span>
+                        <h3 class="font-semibold heading-color text-xl mt-2">Correo Estudiantil</h3>
+                        <p class="text-sm text-gray-600">Maximiza las funcionalidades de tu cuenta para comunicarte y organizar tus tareas académicas.</p>
+                    </div>
+                    <div class="bg-accent-light p-4 rounded-lg flex flex-col items-center">
+                        <span class="icon-box">🏢</span>
+                        <h3 class="font-semibold accent-color text-xl mt-2">Correo Institucional</h3>
+                        <p class="text-sm text-gray-600">Adopta las mejores prácticas para una comunicación profesional y segura dentro de la institución.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección 2.3: Creación Colaborativa de Archivos -->
+            <div class="lg:col-span-3 section-card">
+                <h2 class="text-2xl font-bold heading-color mb-4">🤝 Creación Colaborativa de Archivos</h2>
+                <p class="text-gray-700 mb-6">El trabajo en equipo es clave. Utiliza herramientas como Google Docs/Sheets/Slides y Microsoft Word/Excel/PowerPoint que te permiten co-crear y editar documentos en tiempo real, facilitando proyectos conjuntos y la retroalimentación instantánea.</p>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <span class="icon-box">✍️</span>
+                        <p class="font-semibold heading-color text-lg">Documentos</p>
+                    </div>
+                    <div class="text-4xl accent-color">+</div>
+                    <div class="flex flex-col items-center">
+                        <span class="icon-box">📊</span>
+                        <p class="font-semibold heading-color text-lg">Hojas de Cálculo</p>
+                    </div>
+                    <div class="text-4xl accent-color">+</div>
+                    <div class="flex flex-col items-center">
+                        <span class="icon-box">💡</span>
+                        <p class="font-semibold heading-color text-lg">Presentaciones</p>
+                    </div>
+                    <div class="text-4xl accent-color">=</div>
+                    <div class="flex flex-col items-center bg-primary-light p-4 rounded-lg shadow-md">
+                        <span class="icon-box">👥</span>
+                        <p class="font-bold heading-color text-lg">Trabajo en Equipo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección 2.4, 2.5, 2.6: Herramientas Ofimáticas Clave -->
+            <div class="md:col-span-2 lg:col-span-3 section-card">
+                <h2 class="text-2xl font-bold heading-color mb-4">🛠️ Herramientas Ofimáticas Esenciales</h2>
+                <p class="text-gray-700 mb-6">Domina las aplicaciones fundamentales para la creación, organización y presentación de tus materiales educativos y administrativos.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                    <div class="bg-primary-light p-4 rounded-lg flex flex-col items-center">
+                        <span class="icon-box">📈</span>
+                        <h3 class="font-semibold heading-color text-xl mt-2">Hoja de Cálculo</h3>
+                        <ul class="list-disc list-inside text-sm text-gray-600 text-left mt-2">
+                            <li>Organización de datos</li>
+                            <li>Análisis estadístico</li>
+                            <li>Seguimiento académico</li>
+                            <li>Ejemplos: Microsoft Excel, Google Sheets.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-accent-light p-4 rounded-lg flex flex-col items-center">
+                        <span class="icon-box">🖼️</span>
+                        <h3 class="font-semibold accent-color text-xl mt-2">Presentaciones</h3>
+                        <ul class="list-disc list-inside text-sm text-gray-600 text-left mt-2">
+                            <li>Diseño de diapositivas</li>
+                            <li>Comunicación visual efectiva</li>
+                            <li>Dinamismo en clases</li>
+                            <li>Ejemplos: Microsoft PowerPoint, Google Slides.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary-light p-4 rounded-lg flex flex-col items-center">
+                        <span class="icon-box">📝</span>
+                        <h3 class="font-semibold heading-color text-xl mt-2">Procesador de Texto</h3>
+                        <ul class="list-disc list-inside text-sm text-gray-600 text-left mt-2">
+                            <li>Elaboración de documentos</li>
+                            <li>Formato académico (APA)</li>
+                            <li>Redacción profesional</li>
+                            <li>Ejemplos: Microsoft Word, Google Docs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección 2.7 y 2.8: Almacenamiento y Publicación -->
+            <div class="lg:col-span-3 section-card">
+                <h2 class="text-2xl font-bold heading-color mb-4">☁️ Almacenamiento y Publicación Digital</h2>
+                <p class="text-gray-700 mb-6">Gestiona tus archivos de forma segura y comparte tus creaciones con el mundo. Estas herramientas son fundamentales para la accesibilidad y difusión de tus recursos educativos.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-center">
+                    <div class="bg-accent-light p-4 rounded-lg flex flex-col items-center">
+                        <span class="icon-box">💾</span>
+                        <h3 class="font-semibold accent-color text-xl mt-2">Almacenamiento en la Nube</h3>
+                        <ul class="list-disc list-inside text-sm text-gray-600 text-left mt-2">
+                            <li>Acceso desde cualquier lugar</li>
+                            <li>Sincronización automática</li>
+                            <li>Respaldo seguro de archivos</li>
+                        </ul>
+                    </div>
+                    <div class="bg-primary-light p-4 rounded-lg flex flex-col items-center">
+                        <span class="icon-box">🌐</span>
+                        <h3 class="font-semibold heading-color text-xl mt-2">Publicación en Línea</h3>
+                        <ul class="list-disc list-inside text-sm text-gray-600 text-left mt-2">
+                            <li>Difusión de contenidos</li>
+                            <li>Creación de portafolios</li>
+                            <li>Interacción con la comunidad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección: Generador de Contenidos con Gemini API -->
+            <div class="lg:col-span-3 section-card">
+                <h2 class="text-2xl font-bold heading-color mb-4">📚 Generador de Contenidos (Unidad 2) ✨</h2>
+                <p class="text-gray-700 mb-6">Introduce una palabra clave o pregunta relacionada con los temas de la Unidad 2 (correo electrónico, ofimática, colaboración, nube, publicación) y obtén información relevante.</p>
+                <div class="mb-4">
+                    <textarea id="contentInput" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#E30613]" rows="4" placeholder="Ej: 'Funciones de Excel para docentes' o 'Cómo compartir documentos en la nube'."></textarea>
+                </div>
+                <button id="generateContentButton" class="bg-[#E30613] text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-[#B20000] transition-colors duration-300">
+                    Generar Contenido
+                </button>
+                <div id="contentLoadingIndicator" class="mt-4 text-center heading-color hidden">
+                    Generando contenido...
+                </div>
+                <div id="contentResponseDisplay" class="mt-6 p-4 bg-gray-100 rounded-md border border-gray-200 text-gray-800">
+                    <p class="text-gray-500">El contenido aparecerá aquí.</p>
+                </div>
+            </div>
+            
+            <div class="lg:col-span-3 text-center mt-8">
+                 <h2 class="text-3xl font-bold heading-color">¡Potencia tu productividad docente con estas herramientas!</h2>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 text-sm heading-color mt-8">
+        <p>Copy Left © ISFODOSU</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Function to format Gemini API response
+            const formatGeminiResponse = (rawText) => {
+                let formattedHtml = '';
+                const lines = rawText.split('\n');
+                let inList = false;
+                let listType = '';
+
+                for (let i = 0; i < lines.length; i++) {
+                    const line = lines[i];
+                    const trimmedLine = line.trim();
+                    
+                    const isUnorderedListItem = trimmedLine.startsWith('* ');
+                    const isOrderedListItem = trimmedLine.match(/^\d+\.\s/); 
+
+                    if (isUnorderedListItem || isOrderedListItem) {
+                        if (!inList) {
+                            listType = isUnorderedListItem ? 'ul' : 'ol';
+                            formattedHtml += `<${listType}>\n`;
+                            inList = true;
+                        }
+                        const listItemContent = trimmedLine.replace(/^\*\s/, '').replace(/^\d+\.\s/, '');
+                        formattedHtml += `<li>${listItemContent}</li>\n`;
+                    } else {
+                        if (inList) {
+                            formattedHtml += `</${listType}>\n`;
+                            inList = false;
+                        }
+                        if (trimmedLine) {
+                            const nextLine = lines[i + 1] ? lines[i + 1].trim() : '';
+                            const isPotentialSubtitle = trimmedLine.length < 50 && !isUnorderedListItem && !isOrderedListItem && nextLine !== '';
+                            
+                            if (isPotentialSubtitle) {
+                                formattedHtml += `<p><strong>${trimmedLine}</strong></p>\n`;
+                            } else {
+                                formattedHtml += `<p>${trimmedLine}</p>\n`;
+                            }
+                        } else {
+                            formattedHtml += '<br>\n';
+                        }
+                    }
+                }
+
+                if (inList) {
+                    formattedHtml += `</${listType}>\n`;
+                }
+                return formattedHtml;
+            };
+
+            const contentInput = document.getElementById('contentInput');
+            const generateContentButton = document.getElementById('generateContentButton');
+            const contentLoadingIndicator = document.getElementById('contentLoadingIndicator');
+            const contentResponseDisplay = document.getElementById('contentResponseDisplay');
+
+            generateContentButton.addEventListener('click', async () => {
+                const userQuery = contentInput.value.trim();
+                if (!userQuery) {
+                    contentResponseDisplay.innerHTML = '<p class="text-red-500">Por favor, escribe una palabra clave o pregunta para generar contenido.</p>';
+                    return;
+                }
+
+                contentLoadingIndicator.classList.remove('hidden');
+                contentResponseDisplay.innerHTML = '<p class="text-gray-500">Generando contenido...</p>';
+                generateContentButton.disabled = true;
+
+                try {
+                    let chatHistory = [];
+                    const unit2Topics = [
+                        'Productividad con herramientas de correo estudiantil',
+                        'Gestión del correo electrónico institucional',
+                        'Creación de archivos para trabajar de forma colaborativa',
+                        'Hoja de cálculo',
+                        'Aplicaciones para crear presentaciones con diapositiva',
+                        'Elaboración de documentos académicos con procesador de texto',
+                        'Almacenamiento en la nube',
+                        'Herramientas de publicación en línea'
+                    ];
+                    const prompt = `Proporciona información concisa y relevante sobre "${userQuery}" dentro del contexto de la 'Unidad 2: Productividad docente y herramientas ofimáticas'. Los temas cubiertos en esta unidad son: ${unit2Topics.join(', ')}. Por favor, limita tu respuesta estrictamente a estos temas y no incluyas información fuera de este alcance.`;
+                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                    const payload = { contents: chatHistory };
+                    const apiKey = "AIzaSyAv0b3uHIQgLFrwh-HBbufaClpLvJslF7o"; // API key will be provided by the Canvas environment
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+                    console.log('Gemini API Response:', result);
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        contentResponseDisplay.innerHTML = formatGeminiResponse(text);
+                    } else {
+                        let errorMessage = '<p class="text-red-500">No se pudo generar contenido. La respuesta de la API no es válida.</p>';
+                        if (result.error && result.error.message) {
+                            errorMessage += `<p class="text-red-500">Detalles: ${result.error.message}</p>`;
+                        }
+                        contentResponseDisplay.innerHTML = errorMessage;
+                    }
+                } catch (error) {
+                    console.error('Error al llamar a la API de Gemini:', error);
+                    contentResponseDisplay.innerHTML = '<p class="text-red-500">Ocurrió un error al generar contenido. Por favor, inténtalo de nuevo más tarde.</p>';
+                } finally {
+                    contentLoadingIndicator.classList.add('hidden');
+                    generateContentButton.disabled = false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
